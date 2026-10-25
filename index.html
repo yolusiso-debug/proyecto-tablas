@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Tablas HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Ejercicios de Tablas en HTML</h1>
+
+        <!-- PASO 1 -->
+        <section>
+            <h2>Paso 1</h2>
+            <table>
+                <tr>
+                    <td>Ana</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>3.8</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- PASO 2 -->
+        <section>
+            <h2>Paso 2</h2>
+            <table>
+                <tr>
+                    <th>Aprendiz</th>
+                    <th>Nota</th>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>4.5</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- PASO 5: Unir columnas con colspan -->
+        <section>
+            <h2>Paso 5</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Datos personales</th>
+                        <th>Ficha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>Gómez</td>
+                        <td>2875432</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- PASO 6: Unir filas con rowspan -->
+        <section>
+            <h2>Paso 6</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">Lunes</th>
+                        <td>7:00 a.m.</td>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 a.m.</td>
+                        <td>CSS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- PASO 7: Accesibilidad con scope -->
+        <section>
+            <h2>Paso 7</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Aprendiz</th>
+                        <th scope="col">Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Ana</th>
+                        <td>4.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- PASO 8: Tabla completa con accesibilidad y estilos -->
+        <section>
+            <h2>Paso 8</h2>
+            <table>
+                <caption>Notas del primer trimestre</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Aprendiz</th>
+                        <th scope="col">Ficha</th>
+                        <th scope="col">Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana Gómez</td>
+                        <td class="numero">2875432</td>
+                        <td class="numero">4.5</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Ruiz</td>
+                        <td class="numero">2875432</td>
+                        <td class="numero">3.8</td>
+                    </tr>
+                    <tr>
+                        <td>Laura Pérez</td>
+                        <td class="numero">2875432</td>
+                        <td class="numero">4.2</td>
+                    </tr>
+                    <tr>
+                        <td>Andrés Mejía</td>
+                        <td class="numero">2875432</td>
+                        <td class="numero">3.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">Promedio del grupo</th>
+                        <td class="numero">4.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+       <!-- PASO 9: Tablas en el celular -->
+        <section>
+            <h2>Paso 9</h2>
+            <div class="tabla-contenedor">
+                <table> 
+                      <caption>Notas del primer trimestre</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Aprendiz</th>
+                        <th scope="col">Ficha</th>
+                        <th scope="col">Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana Gómez</td>
+                        <td class="numero">2875432</td>
+                        <td class="numero">4.5</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Ruiz</td>
+                        <td class="numero">2875432</td>
+                        <td class="numero">3.8</td>
+                    </tr>
+                    <tr>
+                        <td>Laura Pérez</td>
+                        <td class="numero">2875432</td>
+                        <td class="numero">4.2</td>
+                    </tr>
+                    <tr>
+                        <td>Andrés Mejía</td>
+                        <td class="numero">2875432</td>
+                        <td class="numero">3.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">Promedio del grupo</th>
+                        <td class="numero">4.0</td>
+                    </tr>
+                </tbody>
+
+                </table>
+            </div>
+        </section>
+
+    
+    </main>
+</body>
+</html>

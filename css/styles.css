@@ -1,0 +1,122 @@
+table {
+    width: 100%;
+    border-collapse: collapse; /* un solo borde entre celdas */
+    font-family: system-ui, sans-serif;
+    
+}
+
+caption {
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+th, td {
+    padding: 10px 12px;        /* espacio interno */
+    border-bottom: 1px solid #dde1ea;
+    text-align: left;
+}
+
+thead th {
+    background: #e7ecfd;
+}
+
+tbody tr:nth-child(even) {
+    background: #f4f6fd;       /* filas intercaladas (cebra) */
+}
+
+tbody tr:hover {
+    background: #fff1a8;       /* resalta la fila bajo el mouse */
+}
+
+.numero {
+    text-align: right;         /* Los números se alinean a la derecha */
+}
+
+
+.tabla-contenedor {
+    overflow-x: auto; /* solo la tabla se desplaza, no la página */
+}
+
+/*  NUEVOS ESTILOS PARA EL HORARIO DE ADSO */
+
+/* Requisito 12: Encabezado fijo al hacer scroll */
+.horario thead th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Requisito 5: Columna de horas diferenciada */
+.horario tbody th[scope="row"] {
+    background-color: #f1f5f9 !important; /* Un fondo gris diferenciado */
+    font-size: 0.85rem;                    /* Texto más pequeño */
+    color: #475569;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Requisito 8: Estilo para las etiquetas de Ambiente */
+.ambiente {
+    display: block;                        /* En una línea aparte */
+    font-size: 0.8rem;                     /* Más pequeño */
+    color: #64748b;                        /* De color gris */
+    font-weight: normal;
+    margin-top: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2px 4px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+/* Requisito 7: Filas de pausa (Descanso y Almuerzo) */
+.pausa {
+    background-color: #cbd5e1 !important; /* Fondo neutro */
+    font-style: italic;                    /* En cursiva */
+    font-weight: bold;
+}
+.pausa td {
+    text-align: center;                    /* Centradas */
+    color: #334155;
+}
+
+/* Requisito 6: Un color de fondo distinto para cada clase */
+.tecnica {
+    background-color: #dbeafe !important; /* Azul claro */
+    color: #1e40af !important;
+    font-weight: bold;
+}
+
+.transversal {
+    background-color: #dcfce7 !important; /* Verde claro */
+    color: #166534 !important;
+    font-weight: bold;
+}
+
+.proyecto {
+    background-color: #fef9c3 !important; /* Amarillo claro */
+    color: #854d0e !important;
+    font-weight: bold;
+}
+
+.libre {
+    background-color: #f3e8ff !important; /* Morado claro */
+    color: #6b21a8 !important;
+    font-weight: bold;
+}
+
+/* Requisito 9: Efecto hover sobre las celdas de clase */
+.tecnica:hover, .transversal:hover, .proyecto:hover, .libre:hover {
+    filter: brightness(0.92); /* Oscurece sutilmente la celda al pasar el mouse */
+    cursor: pointer;
+}
+
+/* Requisito 10: tfoot con texto pequeño y alineado a la derecha */
+tfoot td {
+    background-color: #f8fafc;
+    font-size: 0.85rem;                    /* Texto pequeño */
+    text-align: right;                     /* Alineado a la derecha */
+    color: #64748b;
+    padding: 12px;
+    font-weight: 500;
+}
